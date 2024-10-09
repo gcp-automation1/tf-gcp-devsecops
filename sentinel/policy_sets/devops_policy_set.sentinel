@@ -1,0 +1,30 @@
+# This policy set enforces DevOps-related policies
+
+# Bigquery
+import "sentinel/policies/bq_dataset_expiration.sentinel"
+import "sentinel/policies/bq_enforce_location.sentinel"
+import "sentinel/policies/bq_prevent_public_access.sentinel"
+
+# GCS
+import "sentinel/policies/gcs_bucket_versioning.sentinel"
+import "sentinel/policies/gcs_public_access_prevention.sentinel"
+import "sentinel/policies/gcs_storage_class.sentinel"
+import "sentinel/policies/gcs_uniform_bucket.sentinel"
+
+# Cloud SQL
+import "sentinel/policies/sql_enable_backup.sentinel"
+import "sentinel/policies/sql_high_availability.sentinel"
+import "sentinel/policies/sql_machine_type.sentinel"
+
+# Workbench
+import "sentinel/policies/workbench_instance_disallow_public_ip.sentinel"
+import "sentinel/policies/workbench_instance_enforce_labels_for_cost_management.sentinel"
+import "sentinel/policies/workbench_machine_type.sentinel"
+
+# Feature Store
+import "sentinel/policies/fs_label.sentinel"
+import "sentinel/policies/fs_max_node.sentinel"
+import "sentinel/policies/fs_region.sentinel"
+
+# Tensorboard
+import "sentinel/policies/tensorboard_encryption.sentinel"
